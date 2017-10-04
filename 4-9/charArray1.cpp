@@ -16,9 +16,9 @@ class charArray
 void charArray::getArray()
 {      
      cout<<" ENTER THE DATA UNTIL U ENTER @ ";
-     cin.get(data,MAX,'@');
+     cin.get(data,MAX,'$');
 	 int i=0;
-	 while((ch=cin.get())=='@')
+	 while((ch=cin.get())=='$')
 	 {
 	 	
 	 	data[i++]=ch;
@@ -28,7 +28,7 @@ void charArray::getArray()
 		cout<<"\n THE ENTERED DATA IS ";
 	char ch;
 	
-	for( i=0;data[i]!='\0';i++)
+	for( int i=0;data[i]!='\0';i++)
 	{
      cout<<"The entered data is:\n"<<data[i];
 				//cout.put(data[i]);
